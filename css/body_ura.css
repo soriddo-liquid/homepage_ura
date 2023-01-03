@@ -1,0 +1,235 @@
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
+  display: block;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+a:hover {
+  color: #439fdb;
+  text-decoration: underline;
+}
+a:active {
+  color: #435fdb;
+}
+.pc_area {
+  display: block;
+}
+.phone_area {
+  display: none;
+}
+.ie_Only {
+  display: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex: 3;
+  max-width: 960px;
+  font-family: "ＭＳ Ｐゴシック", "MS PGothic", "メイリオ", Meiryo, Osaka, sans-serif;
+  background-color: #000000;
+}
+.pageTitle {
+  /* 
+    おしゃれなボックスデザイン
+    https://saruwakakun.com/html-css/reference/box
+  */
+  padding: 0.5em 1em;
+  max-width: 40%;
+  text-align: left;
+  color: #FFF;
+}
+.pageTitle p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.grovalNavigation {
+  /* width: 100%;
+  height: 120px;
+  background-color: #888;
+  color: #fff; */
+  background: -moz-linear-gradient( #3e008f,#000440);
+  background: -webkit-linear-gradient( #3e008f,#000440);
+  background: linear-gradient(to right, #3e008f,#000440);
+  color: #FFF;
+}
+.grovalNavigation p {
+  text-align: right;
+  height: 100%;
+  padding: 45px;
+  padding-right: 25px;
+  font-size: 1.8em;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  /* margin-bottom: 10px; */
+  width: auto;
+}
+.content {
+  flex: 1;
+  order: 3;
+  background-color: #455244;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+.content p{
+  color: #c5c5c5;
+}
+.content .marginOn {
+  padding: 15px;
+}
+article {
+  display: flex;
+  order: 66;
+  width: 100%;
+}
+
+/* ローカルナビゲーション関連 */
+
+.localNavigation {
+  order: 2;
+  width: 200px;
+  min-height: 100vh;
+  height: 100%;
+  text-align: center;
+  background-color: #ec6868;
+  color: #691717;
+  border-right: solid;
+  border-color: #555555;
+}
+.localNavigation ul {
+  margin: 0;
+  padding: 0;
+}
+.localNavigation li {
+  list-style: none;
+}
+.localNavigation li a {
+  /* メニューのリストの設定 */
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  font-size: 1.1em;
+}
+.localNavigation li a:hover {
+  background-color: #53360e;
+  color: red;
+}
+.localNavigation .exit a:hover {
+  background-color: #439fdb;
+  color: #ffffff;
+}
+.lclNavBox {
+  /* メニューの一番上 */
+  display: table;
+  background-color: #72187a;
+  z-index: 19999;
+  /*最前面に*/
+  width: 100%;
+  height: 120px;
+}
+.lclNavBox p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2em;
+  text-align: center;
+  color: #a7ff9f;
+}
+
+hr {
+  color: #dfdfdf;
+  background-color: #dfdfdf;
+  border: 0;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 1px;
+  width: 80%;
+}
+
+/*フッター*/
+
+footer {
+  clear: both;
+  height: 20px;
+  text-align: center;
+  font-size: 0.85em;
+  border: 1px solid transparent;
+  background-color: #f3fdb9;
+}
+footer img {
+  vertical-align: text-bottom;
+  width: 20px;
+}
+
+/*
+  パンくずリストとは？
+  https://saruwakakun.com/html-css/basic/breadcrumb#section1
+*/
+
+.breadcrumbs {
+  padding-left: 10px;
+  margin-left: 0;
+  background-color: #b42626;
+  height: auto;
+}
+.breadcrumbs li {
+  display: inline;
+  /*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;
+  color: #fafafa;
+}
+.breadcrumbs li:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 3px;
+  color: #ffffff;
+}
+.breadcrumbs li:last-child:after {
+  content: '';
+}
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #d6d6d6;
+  /*色*/
+}
+.breadcrumbs li a:hover {
+  color: #b9e4fd;
+  text-decoration: underline;
+}
+  /* IE11 */
+_:-ms-lang(x)::-ms-backdrop, .ie_Only {
+  display: block;
+}
+_:-ms-lang(x)::-ms-backdrop, section {
+  display: block;
+}
+
+/* 
+  ----------------------------------
+  以下Nomakeページ用スタイル
+  ----------------------------------
+*/
+iframe{
+  max-width: 640px;
+  min-width: 480px;
+  width: 100%;
+  padding-bottom: 40px;
+}
